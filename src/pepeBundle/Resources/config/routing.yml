@@ -1,0 +1,3 @@
+pepe_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: pepeBundle:Default:index }

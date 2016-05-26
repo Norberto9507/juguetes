@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8" />
+    {% block stylesheets %}
+        <link href="{{ asset('bundles/pepe/css/style.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('bundles/pepe/css/style.ie7.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('bundles/pepe/css/style.responsive.css') }}" rel="stylesheet" type="text/css" />
+        <script>
+            (function(d,s,id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if(d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "http://connect.facebook.net/es_ES/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId    : '286513085018907',
+                    cookie   : true,
+                    xfbml    : true,
+                    version  : 'v2.0'
+                });
+            }
+        </script>
+    {% endblock %}
+
+</head>
+<title>
+{% block title %}
+    Bienvenido
+{% endblock %}
+</title>
+<body>
+
+<div id="art-main">
+    <header class="art-header">
+        <fb:login-button scope="public_profile,email" onlogin="validarUsuario();"></fb:login-button>
+
+
+    </header>
+    <nav class="art-nav">
+        <ul class="art-hmenu"><li><a href="home.html" class="active">Home</a></li><li><a href="products-2.html">Products</a></li><li><a href="specials.html">Specials</a></li><li><a href="company.html">Company</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact-us.html">Contact Us</a></li></ul>
+    </nav>
+
+
+
+    {% block body %}
+
+    {% endblock %}
+
+
+
+    <div class="art-sheet clearfix">
+        <div class="art-layout-wrapper">
+            <div class="art-content-layout">
+                <div class="art-content-layout-row">
+                    <div class="art-layout-cell art-content"><article class="art-post art-article">
+
+
+                            <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout layout-item-0">
+                                    <div class="art-content-layout-row">
+                                        <div class="art-layout-cell layout-item-1" style="width: 100%" >
+                                            <p><img width="150" height="158" alt="" src="{{ asset('bundles/pepe/css/images/779144_small500.png') }}" style="float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;" class=""></p>
+                                            <div style="position:absolute;top:280px;left:80px;">
+
+                                        </div>
+                                    </div>
+
+    </div>
+                                    <div class="art-content-layout">
+                                        <div class="art-content-layout-row">
+                                            <div class="art-layout-cell layout-item-3" style="width: 33%" >
+                                                <h5>Item #1520</h5>
+                                                <p style="text-align: center;"><img width="188" height="125" alt="" src="{{ asset('bundles/pepe/css/images/canvasfgn.png') }}" style="float: left; margin-top: 15px; margin-bottom: 25px;" class=""><br></p>
+                                                <h4>$220</h4>
+                                                <p><a href="#" class="art-button">Add to Cart</a>&nbsp;&nbsp;<a href="#">More Info</a><a href="#"></a></p>
+                                            </div>
+
+
+
+
+
+
+</body>
+</html>
+

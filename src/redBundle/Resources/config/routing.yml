@@ -1,0 +1,3 @@
+red_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: redBundle:Default:index }
