@@ -19,13 +19,15 @@
                });
            }
        </script>
+       
+       <fb:login-button scope="public_profile,email" onlogin="validarUsuario();"></fb:login-button>
    {% endblock %}
 {% block title %}
 
     {{ parent() }}
 {% endblock %}
 {% block body %}
-    <fb:login-button scope="public_profile,email" onlogin="validarUsuario();"></fb:login-button>
+    
     {{ parent() }}
 
 {% endblock %}
