@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return new Response("okoi");
+        return $this->render('pepeBundle:Default:index.html.twig');
     }
 }
